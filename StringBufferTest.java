@@ -8,7 +8,7 @@ public class StringBufferTest {
 		buf.append("Hello").append("world").append("!");
 		//引用传递
 		change(buf);
-         System.out.println(buf);
+                System.out.println(buf);
 	}
 	
 	public static void change(StringBuffer temp){
@@ -16,3 +16,9 @@ public class StringBufferTest {
 	}
 
 }
+
+
+StringBuffer对象的内容是可以修改的
+StringBuffer类主要用于频繁修改字符串的操作上。但是在任何开发中，面对字符串的操作
+大部分情况下优先考虑String类，只有在需要频繁修改时才会考虑使用StringBuffer或
+StringBuilder类操作。
